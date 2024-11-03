@@ -76,3 +76,25 @@ button:focus-visible {
   width: 100%;
   height: 100%;
 }
+
+/* Simplify map controls */
+.leaflet-control-zoom {
+  border: none !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+}
+
+.leaflet-control-zoom a {
+  background-color: white !important;
+  color: #666 !important;
+  border: none !important;
+}
+
+/* Hide attribution */
+.leaflet-control-attribution {
+  display: none !important;
+}
+
+/* Simplify tile borders */
+.leaflet-tile-container img {
+  filter: saturate(0.7) brightness(1.05);
+}
